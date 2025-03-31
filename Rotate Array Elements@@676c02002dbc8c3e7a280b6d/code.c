@@ -1,4 +1,5 @@
 #include <stdio.h>
+int main(){
 
 // Function to reverse a portion of the array
 void reverse(int arr[], int start, int end) {
@@ -18,4 +19,5 @@ void rotateArray(int arr[], int n, int k) {
     reverse(arr, 0, k - 1);
     
     reverse(arr, k, n - 1);
+}
 }
