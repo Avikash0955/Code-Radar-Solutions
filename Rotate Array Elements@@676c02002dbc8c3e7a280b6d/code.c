@@ -35,16 +35,24 @@ void printArray(int arr[], int n) {
 
 // Main function
 int main() {
-    int arr[] = {5, 1, 2, 3, 4, 5, 2};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int k = 3; // Rotate by 3 positions
+    int n, k;
+    
+    // Read the size of the array
+    scanf("%d", &n);
+    int arr[n];
 
-    printf("Original array: ");
-    printArray(arr, n);
+    // Read the array elements
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
 
+    // Read the number of positions to rotate
+    scanf("%d", &k);
+
+    // Rotate the array
     rotateArray(arr, n, k);
 
-    printf("Rotated array: ");
+    // Print the rotated array
     printArray(arr, n);
 
     return 0;
