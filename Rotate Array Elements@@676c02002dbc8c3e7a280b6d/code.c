@@ -25,37 +25,27 @@ void rotateArray(int arr[], int n, int k) {
     reverse(arr, k, n - 1);
 }
 
-// Function to remove elements 2 and 5 and print the result
-void removeAndPrint(int arr[], int n) {
+// Function to print the array
+void printArray(int arr[], int n) {
     for (int i = 0; i < n; i++) {
-        if (arr[i] != 2 && arr[i] != 5) {  // Skip 2 and 5
-            printf("%d ", arr[i]);
-        }
+        printf("%d ", arr[i]);
     }
     printf("\n");
 }
 
 // Main function
 int main() {
-    int n, k;
-    
-    // Read the size of the array
-    scanf("%d", &n);
-    int arr[n];
+    int arr[] = {5, 1, 2, 3, 4, 5, 2};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int k = 3; // Rotate by 3 positions
 
-    // Read the array elements
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
+    printf("Original array: ");
+    printArray(arr, n);
 
-    // Read the number of positions to rotate
-    scanf("%d", &k);
-
-    // Rotate the array
     rotateArray(arr, n, k);
 
-    // Remove elements 2 and 5 and print result
-    removeAndPrint(arr, n);
+    printf("Rotated array: ");
+    printArray(arr, n);
 
     return 0;
 }
