@@ -24,36 +24,3 @@ void rotateArray(int arr[], int n, int k) {
     // Step 3: Reverse remaining elements
     reverse(arr, k, n - 1);
 }
-
-// Function to print the array
-void printArray(int arr[], int n) {
-    for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-}
-
-// Main function
-int main() {
-    int n, k;
-    
-    // Read the size of the array
-    scanf("%d", &n);
-    int arr[n];
-
-    // Read the array elements
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-
-    // Read the number of positions to rotate
-    scanf("%d", &k);
-
-    // Rotate the array
-    rotateArray(arr, n, k);
-
-    // Print the rotated array
-    printArray(arr, n);
-
-    return 0;
-}
