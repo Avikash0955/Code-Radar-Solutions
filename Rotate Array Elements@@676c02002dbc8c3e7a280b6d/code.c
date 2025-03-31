@@ -35,7 +35,7 @@ void printArray(int arr[], int n) {
 
 // Main function
 int main() {
-    int arr[] = {1, 2, 3, 4, 5, 6, 7};
+    int arr[] = {5, 1, 2, 3, 4, 5, 2};
     int n = sizeof(arr) / sizeof(arr[0]);
     int k = 3; // Rotate by 3 positions
 
