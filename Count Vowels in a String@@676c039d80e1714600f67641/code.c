@@ -2,7 +2,6 @@
 #include <string.h>
 
 int main() {
-    char *s = "Hello World"; // hardcoded string
     int c = 0;
     for (int i = 0; s[i]; i++)
         if (strchr("aeiouAEIOU", s[i])) c++;
