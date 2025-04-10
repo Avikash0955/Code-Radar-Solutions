@@ -1,22 +1,10 @@
 #include <stdio.h>
 
-int countVowels(const char *str) {
-    int count = 0;
-    for (int i = 0; str[i] != '\0'; i++) {
-        char ch = str[i];
-        if (ch == 'a' || ch == 'e' || ch == 'i' || 
-            ch == 'o' || ch == 'u' || ch == 'A' || 
-            ch == 'E' || ch == 'I' || ch == 'O' || 
-            ch == 'U') {
-            count++;
-        }
-    }
-    return count;
-}
-
 int main() {
-    const char *str =; 
-    int vowelCount = countVowels(str);
-    printf("%d\n", vowelCount);
+    char *s = "Hello World";
+    int c = 0;
+    for (int i = 0; s[i]; i++)
+        if (strchr("aeiouAEIOU", s[i])) c++;
+    printf("%d\n", c);
     return 0;
 }
