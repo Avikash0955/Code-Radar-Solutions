@@ -14,8 +14,7 @@ int countVowels(const char *str) {
     return count;
 }
 
-int main() {
-    const char *str = "Hello World"; 
+int main() { 
     int vowelCount = countVowels(str);
     printf("%d\n", vowelCount);
     return 0;
